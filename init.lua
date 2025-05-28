@@ -686,7 +686,7 @@ require('lazy').setup({
         clangd = {},
         -- hdl_checker = {},
         --gopls = {},
-        pyright = {},
+        -- pyright = {},
         -- rust_analyzer = {},
         -- ... etc. See `:help lspconfig-all` for a list of all the pre-configured LSPs
         --
@@ -899,7 +899,10 @@ require('lazy').setup({
     config = function()
       ---@diagnostic disable-next-line: missing-fields
       require('tokyonight').setup {
+        transparent = true,
         styles = {
+          sidebars = 'tranparent',
+          floats = 'transparent',
           comments = { italic = false }, -- Disable italics in comments
         },
       }
